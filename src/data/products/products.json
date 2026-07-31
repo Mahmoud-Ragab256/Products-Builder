@@ -1,0 +1,397 @@
+[
+  {
+    "id": 1,
+    "imgUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+    "title": "Wireless Noise-Canceling Headphones",
+    "description": "Experience world-class audio fidelity with our premium over-ear headphones featuring advanced hybrid active noise cancellation. Designed for audiophiles and daily commuters, they deliver up to 30 hours of continuous playback with deep bass and crystal-clear highs.",
+    "colors": [
+      "#000000",
+      "#FFFFFF",
+      "#3357FF"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 299.99
+  },
+  {
+    "id": 2,
+    "imgUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+    "title": "Minimalist Smartwatch Series 5",
+    "description": "Elevate your lifestyle with the Minimalist Smartwatch Series 5, equipped with a vibrant, always-on AMOLED display. Track your daily workouts, continuous heart rate, sleep cycles, and blood oxygen levels while staying connected with seamless smartphone notifications.",
+    "colors": [
+      "#000000",
+      "#C0C0C0",
+      "#RoseGold"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 199.5
+  },
+  {
+    "id": 3,
+    "imgUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+    "title": "Pro Running Sneakers",
+    "description": "Engineered for endurance and maximum comfort, these Pro Running Sneakers feature a high-respomse air-cushioned midsole and a breathable engineered mesh upper. Perfect for long-distance marathon training or high-intensity daily cardio sessions.",
+    "colors": [
+      "#FF0000",
+      "#000000",
+      "#00FF00"
+    ],
+    "category": {
+      "name": "Footwear",
+      "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300"
+    },
+    "price": 129.99
+  },
+  {
+    "id": 4,
+    "imgUrl": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500",
+    "title": "Gaming Mechanical Keyboard",
+    "description": "Take your gaming performance to the next level with this mechanical keyboard featuring customizable per-key RGB backlighting and highly tactile blue mechanical switches. Comes equipped with a durable braided USB-C cable and full anti-ghosting technology.",
+    "colors": [
+      "#000000",
+      "#FFFFFF"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 89.99
+  },
+  {
+    "id": 5,
+    "imgUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
+    "title": "Classic Leather Backpack",
+    "description": "Handcrafted from 100% full-grain genuine leather, this classic backpack blends timeless aesthetic appeal with modern utility. Features a fully padded 15-inch laptop sleeve, multiple organizer pockets, and water-resistant lining for all-day protection.",
+    "colors": [
+      "#8B4513",
+      "#000000",
+      "#D2691E"
+    ],
+    "category": {
+      "name": "Accessories",
+      "imageUrl": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=300"
+    },
+    "price": 149.0
+  },
+  {
+    "id": 6,
+    "imgUrl": "https://images.unsplash.com/photo-1507764923504-cd90bf7da772?w=500",
+    "title": "Ergonomic Office Chair",
+    "description": "Designed for long hours at your desk, this ergonomic office chair features a breathable double-mesh backrest, adjustable dynamic lumbar support, 3D padded armrests, and a smooth pneumatic height adjustment mechanism to prevent back strain.",
+    "colors": [
+      "#000000",
+      "#808080",
+      "#0000FF"
+    ],
+    "category": {
+      "name": "Furniture",
+      "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300"
+    },
+    "price": 349.99
+  },
+  {
+    "id": 7,
+    "imgUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500",
+    "title": "Vintage Polaroid Camera",
+    "description": "Capture instant physical memories with this retro-inspired Polaroid camera. Features smart automatic exposure control, an integrated powerful flash, and a self-timer mode to make capturing candid moments with friends effortless.",
+    "colors": [
+      "#FFFFFF",
+      "#000000",
+      "#FFC0CB"
+    ],
+    "category": {
+      "name": "Photography",
+      "imageUrl": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=300"
+    },
+    "price": 119.0
+  },
+  {
+    "id": 8,
+    "imgUrl": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500",
+    "title": "Polarized Aviator Sunglasses",
+    "description": "Protect your eyes in style with these timeless aviator sunglasses featuring premium polarized UV400 lenses that eliminate harsh glare. Built with an ultra-lightweight metallic alloy frame and scratch-resistant coating for outdoor durability.",
+    "colors": [
+      "#Gold",
+      "#Silver",
+      "#Black"
+    ],
+    "category": {
+      "name": "Fashion",
+      "imageUrl": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=300"
+    },
+    "price": 75.5
+  },
+  {
+    "id": 9,
+    "imgUrl": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500",
+    "title": "Puma Sport Training Shoes",
+    "description": "Built to withstand the toughest workouts, these cross-training shoes feature an aggressive multi-surface rubber outsole for superior grip, an expanded toe box for stability, and responsive cushioning during weightlifting and agility drills.",
+    "colors": [
+      "#000000",
+      "#FFFFFF",
+      "#FF5733"
+    ],
+    "category": {
+      "name": "Footwear",
+      "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300"
+    },
+    "price": 95.0
+  },
+  {
+    "id": 10,
+    "imgUrl": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=500",
+    "title": "Formal Oxford Dress Shoes",
+    "description": "Crafted from premium full-grain Italian leather, these classic Oxford dress shoes offer refined elegance for formal events and corporate environments. Features a hand-stitched leather sole and a cushioned footbed for all-day walking comfort.",
+    "colors": [
+      "#000000",
+      "#8B4513"
+    ],
+    "category": {
+      "name": "Footwear",
+      "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300"
+    },
+    "price": 160.0
+  },
+  {
+    "id": 11,
+    "imgUrl": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500",
+    "title": "Ultra-Slim 14-Inch Laptop",
+    "description": "Unleash next-generation productivity with this ultra-slim 14-inch laptop. Powered by an advanced M-series silicon chip, a stunning Retina display with true-color technology, and an all-day battery life encased in an eco-friendly aluminum chassis.",
+    "colors": [
+      "#Silver",
+      "#SpaceGray"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 1199.99
+  },
+  {
+    "id": 12,
+    "imgUrl": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500",
+    "title": "Fitness Tracker Smart Band",
+    "description": "Keep track of your health goals with this lightweight, water-resistant smart band. Features dynamic step tracking, continuous heart rate monitoring, advanced sleep stage analysis, and a bright touch screen with up to 14 days of battery battery.",
+    "colors": [
+      "#000000",
+      "#008080",
+      "#FF69B4"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 49.99
+  },
+  {
+    "id": 13,
+    "imgUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500",
+    "title": "Designer Canvas Tote Bag",
+    "description": "Versatile and eco-friendly, this heavy-duty canvas tote bag is crafted from 100% organic cotton. Designed with reinforced shoulder straps and a spacious main compartment to easily carry books, groceries, beach essentials, or daily gear.",
+    "colors": [
+      "#F5F5DC",
+      "#000000",
+      "#556B2F"
+    ],
+    "category": {
+      "name": "Accessories",
+      "imageUrl": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=300"
+    },
+    "price": 35.0
+  },
+  {
+    "id": 14,
+    "imgUrl": "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=500",
+    "title": "Nike Air Max Casual Shoes",
+    "description": "Step into iconic style with these classic Air Max sneakers, featuring a visible air-cushioned unit in the heel for unparalleled shock absorption. The durable synthetic and mesh upper delivers exceptional breathability and retro street style.",
+    "colors": [
+      "#FFFFFF",
+      "#000000",
+      "#FF4500"
+    ],
+    "category": {
+      "name": "Footwear",
+      "imageUrl": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=300"
+    },
+    "price": 110.0
+  },
+  {
+    "id": 15,
+    "imgUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500",
+    "title": "Pro Flagship Smartphone",
+    "description": "Featuring a breathtaking 6.7-inch Super Retina OLED display and a versatile pro-grade triple camera system, this flagship smartphone lets you capture stunning 4K video, low-light photography, and enjoy blazing-fast 5G connectivity.",
+    "colors": [
+      "#000000",
+      "#DeepPurple",
+      "#Gold"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 899.99
+  },
+  {
+    "id": 16,
+    "imgUrl": "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500",
+    "title": "Luxury Eau De Parfum",
+    "description": "A sophisticated and captivating fragrance formulated with top notes of bergamot, a warm heart of amber and vanilla, and a rich cedarwood base. Designed to deliver an enduring, luxurious scent profile that lasts all day and night.",
+    "colors": [
+      "#Gold",
+      "#Amber"
+    ],
+    "category": {
+      "name": "Beauty",
+      "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300"
+    },
+    "price": 125.0
+  },
+  {
+    "id": 17,
+    "imgUrl": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500",
+    "title": "100% Cotton Crewneck T-Shirt",
+    "description": "Crafted from 100% ultra-soft combed cotton, this essential crewneck t-shirt provides a relaxed fit and ultimate breathability. Designed with reinforced stitching at the neck and hem to maintain its shape wash after wash.",
+    "colors": [
+      "#FFFFFF",
+      "#000000",
+      "#808080",
+      "#000080"
+    ],
+    "category": {
+      "name": "Fashion",
+      "imageUrl": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=300"
+    },
+    "price": 25.0
+  },
+  {
+    "id": 18,
+    "imgUrl": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500",
+    "title": "Heavyweight Denim Jacket",
+    "description": "A timeless staple for every wardrobe, this vintage-wash denim jacket is constructed from heavy-duty cotton denim. Features classic metal button closures, dual chest flap pockets, and adjustable side tabs for a customized fit.",
+    "colors": [
+      "#4169E1",
+      "#191970",
+      "#000000"
+    ],
+    "category": {
+      "name": "Fashion",
+      "imageUrl": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=300"
+    },
+    "price": 115.0
+  },
+  {
+    "id": 19,
+    "imgUrl": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=500",
+    "title": "Hardcover Bullet Journal",
+    "description": "Organize your thoughts, daily plans, and creative ideas in this premium A5 hardcover bullet journal. Contains 200 pages of bleed-proof 120gsm dot-grid paper, an elastic closure band, dual ribbon bookmarks, and an expandable back pocket.",
+    "colors": [
+      "#008080",
+      "#800080",
+      "#000000"
+    ],
+    "category": {
+      "name": "Stationery",
+      "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300"
+    },
+    "price": 18.5
+  },
+  {
+    "id": 20,
+    "imgUrl": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500",
+    "title": "Nordic Wooden Coffee Table",
+    "description": "Transform your living room with this Scandinavian-inspired coffee table, expertly crafted from solid oak wood. Features a durable smooth lacquer finish, rounded edges for child safety, and sturdy tapered legs for long-lasting stability.",
+    "colors": [
+      "#D2B48C",
+      "#8B4513"
+    ],
+    "category": {
+      "name": "Furniture",
+      "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300"
+    },
+    "price": 280.0
+  },
+  {
+    "id": 21,
+    "imgUrl": "https://images.unsplash.com/photo-1509741102003-ca64bfe5f069?w=500",
+    "title": "Stainless Steel Insulated Bottle",
+    "description": "Engineered with double-wall vacuum insulation, this stainless steel water bottle keeps cold beverages icy for up to 24 hours and hot drinks steaming for 12 hours. Features a leak-proof twist cap and a sweat-free exterior coating.",
+    "colors": [
+      "#000000",
+      "#FFFFFF",
+      "#4682B4",
+      "#FF6347"
+    ],
+    "category": {
+      "name": "Accessories",
+      "imageUrl": "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=300"
+    },
+    "price": 32.99
+  },
+  {
+    "id": 22,
+    "imgUrl": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500",
+    "title": "Wireless Bluetooth Speaker",
+    "description": "Deliver powerful room-filling sound anywhere you go with this rugged wireless Bluetooth speaker. Featuring dual passive radiators for deep bass, an IPX7 fully waterproof rating, and up to 20 hours of continuous playtime per charge.",
+    "colors": [
+      "#000000",
+      "#FF0000",
+      "#0000FF"
+    ],
+    "category": {
+      "name": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300"
+    },
+    "price": 69.99
+  },
+  {
+    "id": 23,
+    "imgUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500",
+    "title": "Hydrating Facial Moisturizer",
+    "description": "Formulated with pure hyaluronic acid, ceramic complex, and botanical extracts, this lightweight daily moisturizer deeply hydrates, repairs the skin barrier, and restores natural radiance without leaving a greasy residue.",
+    "colors": [
+      "#FFFFFF"
+    ],
+    "category": {
+      "name": "Beauty",
+      "imageUrl": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300"
+    },
+    "price": 42.0
+  },
+  {
+    "id": 24,
+    "imgUrl": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500",
+    "title": "Professional Chef Knife",
+    "description": "Master your culinary skills with this 8-inch professional chef knife, precision-forged from high-carbon German stainless steel. Features a razor-sharp hand-honed edge and an ergonomically balanced slip-resistant handle.",
+    "colors": [
+      "#Silver",
+      "#Black"
+    ],
+    "category": {
+      "name": "Kitchen",
+      "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=300"
+    },
+    "price": 85.0
+  },
+  {
+    "id": 25,
+    "imgUrl": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500",
+    "title": "Ceramic Matte Coffee Mug",
+    "description": "Enjoy your favorite hot beverages in this handcrafted 350ml ceramic coffee mug. Features a sophisticated matte finish, a comfortable wide-grip handle, and thick ceramic walls to keep your tea or coffee hot for longer.",
+    "colors": [
+      "#000000",
+      "#FFFFFF",
+      "#8B0000",
+      "#2E8B57"
+    ],
+    "category": {
+      "name": "Kitchen",
+      "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=300"
+    },
+    "price": 22.5
+  }
+]
