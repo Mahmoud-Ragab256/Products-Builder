@@ -1,6 +1,6 @@
 import type { IProducts } from '../data/products/interface'
 import Image from './ui/Image'
-import Button from './ui/Burron'
+import Button from './ui/Button'
 
 
 interface IProps {
@@ -12,9 +12,9 @@ function ProductCard({ product }: IProps) {
     <>
       <div className="border border-gray-300 max-w-sm md:max-w-lg mx-auto md:mx-0 p-3 flex flex-col justify-between gap-2 rounded-sm">
         <div>
-          <Image src={product.imgUrl} alt={product.title} className="w-full h-70 object-cover rounded-sm" ></Image>
+          <Image src={product.imgUrl} alt={product.title} className="w-full h-60 mb-3 object-cover rounded-sm" ></Image>
 
-          <h3 className="text-lg font-bold">{product.title}</h3>
+          <h3 className="text-lg font-bold line-clamp-1 cursor-pointer hover:underline">{product.title}</h3>
 
           <p className='line-clamp-3'>
             {product.description}
@@ -36,8 +36,8 @@ function ProductCard({ product }: IProps) {
           </div>
 
           <div className='flex items-center justify-between gap-2'>
-            <Button className='bg-indigo-700'>Edit</Button>
-            <Button className='bg-red-700'>Delete</Button>
+            <Button className='bg-indigo-700 hover:bg-indigo-800 transition duration-300'>Edit</Button>
+            <Button className='bg-red-700 hover:bg-red-800 transition duration-300'>Delete</Button>
           </div>
         </div>
 

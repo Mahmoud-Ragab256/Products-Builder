@@ -2,16 +2,17 @@ import type { ButtonHTMLAttributes, ReactNode } from 'react'
 interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   className?: string;
+  width?: string
 }
 
-function Burron({ children, className, ...rest }: IProps) {
+function Button({ children, className, width = "w-full", ...rest }: IProps) {
   return (
     <>
-      <button className={`${className} p-2 text-white w-full rounded-sm cursor-pointer`} {...rest}>
+      <button className={`${className} ${width} p-2 text-white rounded-sm cursor-pointer`} {...rest}>
         {children}
       </button>
     </>
   )
 }
 
-export default Burron
+export default Button
