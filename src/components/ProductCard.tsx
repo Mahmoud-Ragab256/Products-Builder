@@ -1,6 +1,7 @@
 import type { IProducts } from '../data/products/interface'
 import Image from './ui/Image'
 import Button from './ui/Button'
+import ColorCircle from './ui/ColorCircle'
 
 
 interface IProps {
@@ -8,6 +9,15 @@ interface IProps {
 }
 
 function ProductCard({ product }: IProps) {
+
+
+  const colorCircles = product.colors.map((color, index) => {
+    return (
+      <ColorCircle key={index} color={color}></ColorCircle>
+    )
+  })
+
+
   return (
     <>
       <div className="border border-gray-300 max-w-sm md:max-w-lg mx-auto md:mx-0 p-3 flex flex-col justify-between gap-2 rounded-sm">
@@ -22,10 +32,8 @@ function ProductCard({ product }: IProps) {
         </div>
 
         <div className='flex flex-col gap-2'>
-          <div className="mt-3 flex items-center space-x-2">
-            <span className="w-5 h-5 bg-red-600 rounded-full cursor-pointer"></span>
-            <span className="w-5 h-5 bg-yellow-600 rounded-full cursor-pointer"></span>
-            <span className="w-5 h-5 bg-green-600 rounded-full cursor-pointer"></span>
+          <div className="flex items-center gap-2 flex-wrap">
+            {colorCircles}
           </div>
 
           <div className="flex justify-between items-center">

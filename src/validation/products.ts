@@ -3,15 +3,17 @@ export interface IErrors {
   description: string;
   price: string;
   imgUrl: string;
+  colors: string;
 }
 
-export function validateProduct({ title, description, price, imgUrl }: { title: string; description: string; price: number; imgUrl: string }) {
+export function validateProduct({ title, description, price, imgUrl, colors }: { title: string; description: string; price: number; imgUrl: string; colors: string[] }) {
 
   const errors: IErrors = {
     title: '',
     description: '',
     price: '',
-    imgUrl: ''
+    imgUrl: '',
+    colors: ''
   }
 
   const isValidURL = (url: string): boolean => {
@@ -37,6 +39,10 @@ export function validateProduct({ title, description, price, imgUrl }: { title: 
 
   if (!imgUrl.trim() || !isValidURL(imgUrl)) {
     errors.imgUrl = 'Image URL must be a valid URL'
+  }
+
+  if (!colors || colors.length === 0) {
+    errors.colors = 'At least one color must be selected'
   }
 
   return errors;
