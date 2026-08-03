@@ -4,9 +4,9 @@ import productsData from './data/products/products.json'
 import ProductCard from "./components/ProductCard"
 import Modal from "./components/ui/Modal"
 import Button from "./components/ui/Button"
-import { newProductForm } from "./data/formInput/forms"
+import { productForm } from "./data/formInput/forms"
 import Input from "./components/ui/Input"
-import type { INewProductForm } from "./data/formInput/interface"
+import type { IProductForm } from "./data/formInput/interface"
 import { validateProduct, type IErrors } from "./validation/products"
 import ErrorMsg from "./components/ui/ErrorMsg"
 import { productColors } from "./data/products/colors"
@@ -35,7 +35,6 @@ function App() {
     imgUrl: '',
     colors: ''
   }
-
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [products, setProducts] = useState<IProducts[]>(productsData)
@@ -82,9 +81,9 @@ function App() {
       imgUrl,
       colors: selectedColors
     })
-    const hasErrorMsg = Object.values(errors).some(errorMsg => errorMsg === '') && Object.values(errors).every(errorMsg => errorMsg === '')
+    const noErrorMsg = Object.values(errors).some(errorMsg => errorMsg === '') && Object.values(errors).every(errorMsg => errorMsg === '')
 
-    if (!hasErrorMsg) {
+    if (!noErrorMsg) {
       setErrors(errors)
       return;
     }
@@ -128,7 +127,7 @@ function App() {
 
 
 
-  const newProductInputs = newProductForm.map((input: INewProductForm) => {
+  const newProductInputs = productForm.map((input: IProductForm) => {
     return (
       <div key={input.name}>
         <Input input={input} value={product[input.name]} onChange={onChangeHandler}></Input>
@@ -137,7 +136,7 @@ function App() {
     )
   })
 
-  const cards = products.map(product => <ProductCard product={product} key={product.id}></ProductCard>)
+  const cards = products.map(product => <ProductCard product={product} allColors={productColors} key={product.id} products={products} setProducts={setProducts} ></ProductCard>)
 
   const colorsSelected = selectedColors.map((color, index) => {
     let textColor = 'text-white'

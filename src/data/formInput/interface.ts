@@ -1,3 +1,5 @@
+import { type TName } from "../../types";
+
 export interface IInput {
   name: string;
   type: string;
@@ -6,6 +8,6 @@ export interface IInput {
 }
 
 
-export interface INewProductForm extends IInput {
-  name: "title" | "description" | "price" | "imgUrl";
+export interface IProductForm extends IInput {
+  name: TName;
 }
