@@ -36,6 +36,7 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
   const [productToEdit, setProductToEdit] = useState<IProducts>(product)
   const [errors, setErrors] = useState<IErrors>(defaultErrors)
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false)
   const [selectedCategory, setSelectedCategory] = useState<ICategory>(categories[0])
   const [colorsToChange, setColorsToChange] = useState<string[]>(productToEdit.colors)
 
@@ -47,8 +48,17 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
     setIsOpen(false)
   }
 
+
+  function openDeleteModal() {
+    setIsDeleteModalOpen(true)
+  }
+
+  function closeDeleteModal() {
+    setIsDeleteModalOpen(false)
+  }
+
   const onCancel = () => {
-    // setProduct(defaultProduct)
+    setProductToEdit(product)
     setErrors(defaultErrors)
     setColorsToChange(productToEdit.colors)
     closeModal()
@@ -83,7 +93,7 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
       description: productToEdit.description,
       price: productToEdit.price,
       imgUrl: productToEdit.imgUrl,
-      colors: productToEdit.colors
+      colors: colorsToChange
     })
 
     const noErrorMsg = Object.values(errors).some(errorMsg => errorMsg === '') && Object.values(errors).every(errorMsg => errorMsg === '')
@@ -100,7 +110,7 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
     }
 
     const updatedProducts = products.map(product => product.id === updatedProduct.id ? updatedProduct : product)
-
+    setProductToEdit(updatedProduct)
     setProducts(updatedProducts)
     closeModal()
   }
@@ -108,10 +118,13 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
 
   const onEdit = () => {
     console.log('edit', product.id)
-
     openModal()
   }
 
+  const onDelete = () => {
+    const updatedProducts = products.filter(productItem => productItem.id !== product.id)
+    setProducts(updatedProducts)
+  }
 
 
 
@@ -179,19 +192,22 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
 
           <div className="flex justify-between items-center">
             <span>${product.price}</span>
-            <span className='cursor-pointer'>
-              <Image src={product.category.imageUrl} alt="product type" className='w-10 h-10 rounded-full border border-gray-200' ></Image>
-            </span>
+            <div className='flex items-center gap-1'>
+              {product.category.name}
+              <span className='cursor-pointer'>
+                <Image src={product.category.imageUrl} alt="product type" className='w-10 h-10 rounded-full border border-gray-200' ></Image>
+              </span>
+            </div>
           </div>
 
           <div className='flex items-center justify-between gap-2'>
             <Button className='bg-indigo-700 hover:bg-indigo-800 transition duration-300' onClick={onEdit}>Edit</Button>
-            <Button className='bg-red-700 hover:bg-red-800 transition duration-300'>Delete</Button>
+            <Button className='bg-red-700 hover:bg-red-800 transition duration-300' onClick={openDeleteModal}>Delete</Button>
           </div>
         </div>
 
       </div>
-      <Modal isOpen={isOpen} closeModal={closeModal} title="Add New Product">
+      <Modal isOpen={isOpen} closeModal={closeModal} title="Edit Product">
         <form className="space-y-3" onSubmit={onSubmitHandler}>
 
           {editProductInputs}
@@ -211,7 +227,13 @@ function ProductCard({ product, allColors, products, setProducts }: IProps) {
           </div>
         </form>
       </Modal>
-
+      <Modal isOpen={isDeleteModalOpen} closeModal={closeDeleteModal} title="Delete Product">
+        <p>Are you sure you want to delete this product?</p>
+        <div className='flex items-center justify-between gap-3 mt-4'>
+          <Button className='bg-red-700 hover:bg-red-800 transition duration-300' onClick={onDelete}>Delete</Button>
+          <Button className='bg-gray-700 hover:bg-gray-500 transition duration-300' onClick={closeDeleteModal}>Cancel</Button>
+        </div>
+      </Modal>
     </>
   )
 }
